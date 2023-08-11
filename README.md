@@ -10,6 +10,8 @@
 ## Instance
 - Find: ````\bMock<(.+?)>````
 - Replace: ````$1````
+- Find: ````\bMock\.Of<(.*)>\((.*?)\)````
+- Replace: ````Substitute.For<$1>($2)````
 
 ## Setup
 - Find: ````(?<!\.)\b(\w+)(\s\n\s*)?\.Setup(Get)?\((\w+) => \4(\.?.+?)\)(?=\.R|\s\n)````
